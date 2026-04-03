@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const BERNARD_PHOTO = "/bernard-photo.jpg";
+const BERNARD_PHOTO = import.meta.env.BASE_URL + "bernard-photo.jpg";
 
 
 // ─── AI Chatbot Component ───
