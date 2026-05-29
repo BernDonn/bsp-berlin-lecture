@@ -8,7 +8,7 @@ const AIChatbot = ({ isOpen, onClose }) => {
   const [messages, setMessages] = useState([
     {
       role: "ai",
-      text: "Hello! I'm Bernard's AI assistant. Ask me anything about his background, lecture topics, or the upcoming BSP Berlin / Hamburg sessions. Try: \"What will the lectures cover?\" or \"Tell me about Bernard's career.\"",
+      text: "Hello! I'm Bernard's AI assistant. Ask me about his background, lecture topics, or the upcoming BSP Berlin lectures. Try: \"What will the lectures cover?\" or \"Tell me about Bernard's career.\"",
     },
   ]);
   const [input, setInput] = useState("");
@@ -18,7 +18,7 @@ const AIChatbot = ({ isOpen, onClose }) => {
   const knowledgeBase = {
     lectures: {
       keywords: ["lecture", "topic", "session", "programme", "program", "teach", "cover", "week", "schedule", "class"],
-      response: "Bernard's three-day lecture series at BSP in Berlin / Hamburg covers three interconnected themes:\n\n1️⃣ Generative AI in Business & Education — foundations and real-world impact\n2️⃣ From Chatbots to Agents — with a live demo of \"Open Claw\", an autonomous AI agent framework\n3️⃣ AI, Organisations & Human Behaviour — how AI reshapes work, teams, and decision-making\n\nAll sessions are interactive: expect group discussions, live demos, and real-world problem solving.",
+      response: "Bernard's three lecture series at BSP in Berlin covers three interconnected themes:\n\n1️⃣ Generative AI in Business & Education — foundations and real-world impact\n2️⃣ From Chatbots to Agents — with a live demo of \"Open Claw\", an autonomous AI agent framework\n3️⃣ AI, Organisations & Human Behaviour — how AI reshapes work, teams, and decision-making\n\nAll sessions are interactive: expect group discussions, live demos, and real-world problem solving.",
     },
     career: {
       keywords: ["career", "background", "experience", "work", "philips", "ceo", "history", "professional", "resume", "cv"],
@@ -240,21 +240,21 @@ export default function BSPBerlinMicrosite() {
 
   const lectures = [
     {
-      day: "Day 1",
+      day: "Session 1",
       title: "Generative AI in Business & Education",
       icon: "🧠",
       description: "Setting the stage: what generative AI actually is, how it works, and why it matters for business students and future leaders. We'll explore real industry shifts and the concept of AI as a General Purpose Technology.",
       format: "Lecture + group discussion",
     },
     {
-      day: "Day 2",
+      day: "Session 2",
       title: "From Chatbots to Agents",
       icon: "🤖",
       description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' — an agent framework that can reason, plan, and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
       format: "Lecture + live demo + hands-on",
     },
     {
-      day: "Day 3",
+      day: "Session 3",
       title: "AI, Organisations & Human Behaviour",
       icon: "🏢",
       description: "How does AI reshape organisational behaviour, team dynamics, and leadership? Drawing on 30+ years of international management experience — from Philips Russia to Silicon Valley — Bernard explores the human side of technological transformation.",
@@ -366,7 +366,7 @@ export default function BSPBerlinMicrosite() {
               background: "rgba(123, 47, 247, 0.15)", color: "#a78bfa",
               fontSize: 13, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase",
             }}>
-              Guest Lecture Series — June 2026 — Berlin / Hamburg
+              Guest Lecture Series — June 3 & 4  2026 — Berlin 
             </span>
           </div>
 
@@ -387,7 +387,7 @@ export default function BSPBerlinMicrosite() {
             fontSize: 19, color: "#94a3b8", maxWidth: 640, margin: "0 auto 40px",
             lineHeight: 1.7,
           }}>
-            Three days of interactive lectures by <strong style={{ color: "#e2e8f0" }}>Bernard Donners</strong> at{" "}
+            Three 60 minutes interactive lectures by <strong style={{ color: "#e2e8f0" }}>Bernard Donners</strong> at{" "}
             <strong style={{ color: "#e2e8f0" }}>BSP Business and Law School</strong> in Berlin / Hamburg — exploring how generative AI
             is transforming business, education, and the way we work.
           </p>
@@ -481,9 +481,9 @@ export default function BSPBerlinMicrosite() {
             <div style={{ fontSize: 15, lineHeight: 1.8, color: "#475569" }}>
               <p style={{ marginBottom: 16 }}>
                 Bernard Donners is a lecturer at <strong>Tio Business School</strong> (Amsterdam), where he teaches
-                International Business, Organisational Behaviour, and AI-related topics. His work focuses on the impact
-                of generative AI on learning, creativity, and work — and on how organisations can move from
-                experimentation to meaningful, practical adoption.
+                International Business, Organisational Behaviour and AI. His work focuses on the impact
+                of generative AI on learning, creativity, and work, how organisations can move from
+                experimentation to practical adoption. His core concern "A lot of students just got better at producing output, not better at thinking". 
               </p>
               <p style={{ marginBottom: 16 }}>
                 Before entering academia, Bernard spent over three decades in international executive roles at
@@ -517,7 +517,7 @@ export default function BSPBerlinMicrosite() {
           <div style={{ textAlign: "center", marginBottom: 48 }}>
             <div className="section-title">Lecture Programme</div>
             <div className="section-subtitle" style={{ margin: "0 auto" }}>
-              Three days of interactive sessions combining conceptual depth with hands-on practice.
+              Three interactive sessions combining conceptual depth with hands-on practice.
             </div>
           </div>
 
