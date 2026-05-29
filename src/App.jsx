@@ -226,6 +226,13 @@ const Counter = ({ end, suffix = "", duration = 2000 }) => {
   return <span ref={ref}>{count}{suffix}</span>;
 };
 
+// ─── Helper: parse format string into separate time slots ───
+const parseFormatSlots = (format) => {
+  // Split on " and " to get each day's slot
+  const parts = format.split(" and ");
+  return parts.map((part) => part.trim());
+};
+
 // ─── Main App ───
 export default function BSPBerlinMicrosite() {
   const [chatOpen, setChatOpen] = useState(false);
@@ -313,6 +320,19 @@ export default function BSPBerlinMicrosite() {
 
         a { color: #7b2ff7; text-decoration: none; }
         a:hover { text-decoration: underline; }
+
+        .format-slot {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: 8px;
+          background: #f1f5f9;
+          font-size: 13px;
+          color: #64748b;
+          font-weight: 500;
+          border: 1px solid #e2e8f0;
+        }
       `}</style>
 
       {/* ─── Navigation ─── */}
@@ -553,14 +573,17 @@ export default function BSPBerlinMicrosite() {
                 <h3 style={{ fontSize: 26, fontWeight: 700, marginBottom: 12, letterSpacing: -0.5 }}>
                   {lectures[activeDay].title}
                 </h3>
-                <p style={{ fontSize: 15, lineHeight: 1.8, color: "#475569", marginBottom: 16 }}>
+                <p style={{ fontSize: 15, lineHeight: 1.8, color: "#475569", marginBottom: 20 }}>
                   {lectures[activeDay].description}
                 </p>
-                <div style={{
-                  display: "inline-block", padding: "6px 14px", borderRadius: 8,
-                  background: "#f1f5f9", fontSize: 13, color: "#64748b", fontWeight: 500,
-                }}>
-                  Format: {lectures[activeDay].format}
+                {/* ─── Format slots: one rectangle per time slot ─── */}
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+                  {parseFormatSlots(lectures[activeDay].format).map((slot, idx) => (
+                    <div key={idx} className="format-slot">
+                      <span style={{ fontSize: 15 }}>{idx === 0 ? "📅" : "📅"}</span>
+                      {slot}
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
