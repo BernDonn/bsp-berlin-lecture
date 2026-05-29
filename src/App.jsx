@@ -250,7 +250,7 @@ export default function BSPBerlinMicrosite() {
       day: "Session 2",
       title: "From Chatbots to Agents",
       icon: "🤖",
-      description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' and 'Hermes' — agents that can reason, plan, and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
+      description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' and 'Hermes', agents that can reason, plan and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
       format: "Lecture + live demo + hands-on",
     },
     {
