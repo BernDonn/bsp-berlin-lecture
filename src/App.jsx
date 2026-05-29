@@ -179,7 +179,7 @@ const AIChatbot = ({ isOpen, onClose }) => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSend()}
-          placeholder="Ask me anything..."
+          placeholder="Ask me..."
           style={{
             flex: 1, padding: "8px 12px", border: "1px solid #e2e8f0",
             borderRadius: 8, fontSize: 13, outline: "none",
