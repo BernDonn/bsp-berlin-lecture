@@ -18,7 +18,7 @@ const AIChatbot = ({ isOpen, onClose }) => {
   const knowledgeBase = {
     lectures: {
       keywords: ["lecture", "topic", "session", "programme", "program", "teach", "cover", "week", "schedule", "class"],
-      response: "Bernard's three lecture series at BSP in Berlin covers three interconnected themes:\n\n1️⃣ Generative AI in Business & Education — foundations and real-world impact\n2️⃣ From Chatbots to Agents — with a live demo of \"Open Claw\", an autonomous AI agent framework\n3️⃣ AI, Organisations & Human Behaviour — how AI reshapes work, teams, and decision-making\n\nAll sessions are interactive: expect group discussions, live demos, and real-world problem solving.",
+      response: "Bernard's three lecture series at BSP in Berlin covers three interconnected themes:\n\n1️⃣ Generative AI in Business & Education — foundations and real-world impact\n2️⃣ From Chatbots to Agents — with a live demos of \"Open Claw\" and 'Hermes', autonomous AI agent frameworks\n3️⃣ AI, Organisations & Human Behaviour — how AI reshapes work, teams and decision-making\n\nAll sessions are interactive: expect group discussions, live demos and real-world problem solving.",
     },
     career: {
       keywords: ["career", "background", "experience", "work", "philips", "ceo", "history", "professional", "resume", "cv"],
@@ -61,7 +61,7 @@ const AIChatbot = ({ isOpen, onClose }) => {
 
     if (bestMatch && bestScore > 0) return bestMatch.response;
 
-    return "That's a great question! While I may not have the specific details on that, I'd recommend reaching out to Bernard directly or exploring his website at bernarddonners-ai.nl. I can tell you about his lecture programme, career history, AI expertise, or his connection to Germany — just ask!";
+    return "That's a great question! While I may not have the specific details on that, I'd recommend reaching out to Bernard directly or exploring his website at bernarddonners-ai.nl. I can tell you about his lecture programme, career history, AI expertise or his connection to Germany — just ask!";
   };
 
   const handleSend = () => {
@@ -243,7 +243,7 @@ export default function BSPBerlinMicrosite() {
       day: "Session 1",
       title: "Generative AI in Business & Education",
       icon: "🧠",
-      description: "Setting the stage: what generative AI actually is, how it works, and why it matters for business students and future leaders. We'll explore real industry shifts and the concept of AI as a General Purpose Technology.",
+      description: "Setting the stage: what generative AI actually is, how it works, and why it matters for business students and future leaders. We'll explore industry shifts and the concept of AI as a General Purpose Technology.",
       format: "Lecture + group discussion",
     },
     {
@@ -257,7 +257,7 @@ export default function BSPBerlinMicrosite() {
       day: "Session 3",
       title: "AI, Organisations & Human Behaviour",
       icon: "🏢",
-      description: "How does AI reshape organisational behaviour, team dynamics, and leadership? Drawing on 30+ years of international management experience, from Philips Russia to Silicon Valley, Bernard explores the human side of technological transformation.",
+      description: "How does AI reshape organisational behaviour, team dynamics and leadership? Drawing on 30+ years of international management experience, from Philips Russia to Silicon Valley, Bernard explores the human side of technological transformation.",
       format: "Lecture + case study + discussion",
     },
   ];
@@ -269,7 +269,7 @@ export default function BSPBerlinMicrosite() {
     { year: "2000–2004", role: "EVP Business Development", company: "Philips North America", location: "Silicon Valley / New York", flag: "🇺🇸", highlight: "IP deals with Microsoft, Sony, Samsung. Led lobbying in Washington. Negotiated with Hollywood and AOL Time Warner." },
     { year: "2004–2008", role: "CEO Philips Russia", company: "Philips", location: "Moscow", flag: "🇷🇺", highlight: "Built the company from a representative office to a €1B operation across Russia, Ukraine & Central Asia." },
     { year: "2011–present", role: "CEO & Co-founder", company: "Iceland Cream", location: "Amsterdam", flag: "🇳🇱", highlight: "Digital transformation of international skincare brands. Recognised by NYC HQ as 'reference class' for global expansion." },
-    { year: "2024–present", role: "Lecturer International Business & AI", company: "Tio Business School", location: "Amsterdam", flag: "🇳🇱", highlight: "Teaching AI, International Strategy & Organisational Behaviour. Running an AI Laboratory for students." },
+    { year: "2024–present", role: "Lecturer International Business & AI", company: "Tio Business School", location: "Amsterdam", flag: "🇳🇱", highlight: "Teaching AI, International Strategy & Organisational Behaviour. Running an "AI Laboratory" for students." },
   ];
 
   return (
