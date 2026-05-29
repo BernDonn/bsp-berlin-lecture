@@ -250,20 +250,20 @@ export default function BSPBerlinMicrosite() {
       day: "Session 2",
       title: "From Chatbots to Agents",
       icon: "🤖",
-      description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' — an agent framework that can reason, plan, and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
+      description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' and 'Hermes' — agents that can reason, plan, and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
       format: "Lecture + live demo + hands-on",
     },
     {
       day: "Session 3",
       title: "AI, Organisations & Human Behaviour",
       icon: "🏢",
-      description: "How does AI reshape organisational behaviour, team dynamics, and leadership? Drawing on 30+ years of international management experience — from Philips Russia to Silicon Valley — Bernard explores the human side of technological transformation.",
+      description: "How does AI reshape organisational behaviour, team dynamics, and leadership? Drawing on 30+ years of international management experience, from Philips Russia to Silicon Valley, Bernard explores the human side of technological transformation.",
       format: "Lecture + case study + discussion",
     },
   ];
 
   const careerTimeline = [
-    { year: "1989–1996", role: "VP Product Management, Car Systems Europe", company: "Philips Germany", location: "Wetzlar / Frankfurt", flag: "🇩🇪", highlight: "Launched world's first retail car navigation. Built teams across 12 European countries." },
+    { year: "1989–1996", role: "VP Product Management, Car Systems Europe", company: "Philips Germany", location: "Wetzlar", flag: "🇩🇪", highlight: "Launched world's first retail car navigation. Built teams across 12 European countries." },
     { year: "1996–1999", role: "SVP & General Manager, Fax Division", company: "Philips Austria", location: "Vienna", flag: "🇦🇹", highlight: "Turnaround: from #2 on Philips' 'bleeder list' to Europe's #1, with 100%+ ROA." },
     { year: "1999–2000", role: "SVP & GM, Mobile Audio ($1B)", company: "Philips", location: "Hong Kong", flag: "🇭🇰", highlight: "Led $1B global business. Launched Philips internet radio — a first in the industry." },
     { year: "2000–2004", role: "EVP Business Development", company: "Philips North America", location: "Silicon Valley / New York", flag: "🇺🇸", highlight: "IP deals with Microsoft, Sony, Samsung. Led lobbying in Washington. Negotiated with Hollywood and AOL Time Warner." },
