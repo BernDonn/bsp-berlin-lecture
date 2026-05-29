@@ -244,21 +244,21 @@ export default function BSPBerlinMicrosite() {
       title: "Generative AI in Business & Education",
       icon: "🧠",
       description: "Setting the stage: what generative AI actually is, how it works, and why it matters for business students and future leaders. We'll explore industry shifts and the concept of AI as a General Purpose Technology.",
-      format: "Lecture + group discussion",
+      format: "Wednesday 03 June, 15:45 - 17:00 (Bachelor Business) and Thursday 04 June, 8:00 - 9:15 (Bachelor Business Psychology), Lecture + group discussion",
     },
     {
       day: "Session 2",
       title: "From Chatbots to Agents",
       icon: "🤖",
       description: "A journey from simple chat interfaces to autonomous AI agents. Includes a live demonstration of 'Open Claw' and 'Hermes', agents that can reason, plan and act. Students will see AI in action, but also its risks in privacy and security, not just in theory.",
-      format: "Lecture + live demo + hands-on",
+      format: "Wednesday 03 June, 17:00 - 18:00 (Bachelor Business) and Thursday 04 June, 9:15 - 10:15 (Bachelor Business Psychology),Lecture + live demo + hands-on",
     },
     {
       day: "Session 3",
       title: "AI, Organisations & Human Behaviour",
       icon: "🏢",
       description: "How does AI reshape organisational behaviour, team dynamics and leadership? Drawing on 30+ years of international management experience, from Philips Russia to Silicon Valley, Bernard explores the human side of technological transformation.",
-      format: "Lecture + case study + discussion",
+      format: "Wednesday 03 June, 18:00 - 19:00 (Bachelor Business) and Thursday 04 June, 10:15 - 11:15 (Bachelor Business Psychology),Lecture + case study + discussion",
     },
   ];
 
