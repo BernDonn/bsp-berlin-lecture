@@ -388,7 +388,7 @@ export default function BSPBerlinMicrosite() {
             lineHeight: 1.7,
           }}>
             Three 60 minutes interactive lectures by <strong style={{ color: "#e2e8f0" }}>Bernard Donners</strong> at{" "}
-            <strong style={{ color: "#e2e8f0" }}>BSP Business and Law School</strong> in Berlin / Hamburg — exploring how generative AI
+            <strong style={{ color: "#e2e8f0" }}>BSP Business and Law School</strong> in Berlin — exploring how generative AI
             is transforming business, education, and the way we work.
           </p>
 
@@ -482,7 +482,7 @@ export default function BSPBerlinMicrosite() {
               <p style={{ marginBottom: 16 }}>
                 Bernard Donners is a lecturer at <strong>Tio Business School</strong> (Amsterdam), where he teaches
                 International Business, Organisational Behaviour and AI. His work focuses on the impact
-                of generative AI on learning, creativity, and work, how organisations can move from
+                of generative AI on learning, creativity and work, how organisations can move from
                 experimentation to practical adoption. His core concern "A lot of students just got better at producing output, not better at thinking". 
               </p>
               <p style={{ marginBottom: 16 }}>
