@@ -226,11 +226,15 @@ const Counter = ({ end, suffix = "", duration = 2000 }) => {
   return <span ref={ref}>{count}{suffix}</span>;
 };
 
-// ─── Helper: parse format string into separate time slots ───
-const parseFormatSlots = (format) => {
-  // Split on " and " to get each day's slot
-  const parts = format.split(" and ");
-  return parts.map((part) => part.trim());
+// ─── Helper: parse format string into time slots and session type ───
+// Format string structure: "<slot1> and <slot2>,<sessionType>"
+const parseFormat = (format) => {
+  // Split on last comma to separate session type from time slots
+  const lastComma = format.lastIndexOf(",");
+  const sessionType = lastComma !== -1 ? format.slice(lastComma + 1).trim() : "";
+  const slotsStr = lastComma !== -1 ? format.slice(0, lastComma) : format;
+  const slots = slotsStr.split(" and ").map((s) => s.trim());
+  return { sessionType, slots };
 };
 
 // ─── Main App ───
@@ -251,7 +255,7 @@ export default function BSPBerlinMicrosite() {
       title: "Generative AI in Business & Education",
       icon: "🧠",
       description: "Setting the stage: what generative AI actually is, how it works, and why it matters for business students and future leaders. We'll explore industry shifts and the concept of AI as a General Purpose Technology.",
-      format: "Wednesday 03 June, 15:45 - 17:00 (Bachelor Business) and Thursday 04 June, 8:00 - 9:15 (Bachelor Business Psychology), Lecture + group discussion",
+      format: "Wednesday 03 June, 15:45 - 17:00 (Bachelor Business) and Thursday 04 June, 8:00 - 9:15 (Bachelor Business Psychology),Lecture + group discussion",
     },
     {
       day: "Session 2",
@@ -332,6 +336,20 @@ export default function BSPBerlinMicrosite() {
           color: #64748b;
           font-weight: 500;
           border: 1px solid #e2e8f0;
+        }
+
+        .session-type-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 6px 14px;
+          border-radius: 8px;
+          background: linear-gradient(135deg, rgba(26,26,46,0.08), rgba(123,47,247,0.08));
+          font-size: 13px;
+          color: #7b2ff7;
+          font-weight: 600;
+          border: 1px solid rgba(123,47,247,0.2);
+          margin-bottom: 12px;
         }
       `}</style>
 
@@ -576,15 +594,28 @@ export default function BSPBerlinMicrosite() {
                 <p style={{ fontSize: 15, lineHeight: 1.8, color: "#475569", marginBottom: 20 }}>
                   {lectures[activeDay].description}
                 </p>
-                {/* ─── Format slots: one rectangle per time slot ─── */}
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-                  {parseFormatSlots(lectures[activeDay].format).map((slot, idx) => (
-                    <div key={idx} className="format-slot">
-                      <span style={{ fontSize: 15 }}>{idx === 0 ? "📅" : "📅"}</span>
-                      {slot}
+                {/* ─── Session type badge above time slots ─── */}
+                {(() => {
+                  const { sessionType, slots } = parseFormat(lectures[activeDay].format);
+                  return (
+                    <div>
+                      {sessionType && (
+                        <div className="session-type-badge">
+                          <span>📋</span>
+                          {sessionType}
+                        </div>
+                      )}
+                      <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+                        {slots.map((slot, idx) => (
+                          <div key={idx} className="format-slot">
+                            <span style={{ fontSize: 15 }}>📅</span>
+                            {slot}
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  ))}
-                </div>
+                  );
+                })()}
               </div>
             </div>
           </div>
