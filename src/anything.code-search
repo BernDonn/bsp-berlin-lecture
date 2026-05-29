@@ -1,0 +1,10 @@
+# Query: anything
+# Flags: CaseSensitive
+# ContextLines: 1
+
+1 result - 1 file
+
+src/App.jsx:
+  181            onKeyDown={(e) => e.key === "Enter" && handleSend()}
+  182:           placeholder="Ask me ..."
+  183            style={{
