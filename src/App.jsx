@@ -269,7 +269,7 @@ export default function BSPBerlinMicrosite() {
     { year: "2000–2004", role: "EVP Business Development", company: "Philips North America", location: "Silicon Valley / New York", flag: "🇺🇸", highlight: "IP deals with Microsoft, Sony, Samsung. Led lobbying in Washington. Negotiated with Hollywood and AOL Time Warner." },
     { year: "2004–2008", role: "CEO Philips Russia", company: "Philips", location: "Moscow", flag: "🇷🇺", highlight: "Built the company from a representative office to a €1B operation across Russia, Ukraine & Central Asia." },
     { year: "2011–present", role: "CEO & Co-founder", company: "Iceland Cream", location: "Amsterdam", flag: "🇳🇱", highlight: "Digital transformation of international skincare brands. Recognised by NYC HQ as 'reference class' for global expansion." },
-    { year: "2024–present", role: "Lecturer International Business & AI", company: "Tio Business School", location: "Amsterdam", flag: "🇳🇱", highlight: "Teaching AI, International Strategy & Organisational Behaviour. Running an "AI Laboratory" for students." },
+    { year: "2024–present", role: "Lecturer International Business & AI", company: "Tio Business School", location: "Amsterdam", flag: "🇳🇱", highlight: "Teaching AI, International Strategy & Organisational Behaviour. Running an 'AI Laboratory' for students." },
   ];
 
   return (
