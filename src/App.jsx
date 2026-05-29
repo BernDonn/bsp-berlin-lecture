@@ -388,8 +388,8 @@ export default function BSPBerlinMicrosite() {
             lineHeight: 1.7,
           }}>
             Three 60 minutes interactive lectures by <strong style={{ color: "#e2e8f0" }}>Bernard Donners</strong> at{" "}
-            <strong style={{ color: "#e2e8f0" }}>BSP Business and Law School</strong> in Berlin — exploring how generative AI
-            is transforming business, education, and the way we work.
+            <strong style={{ color: "#e2e8f0" }}>BSP Business and Law School</strong> in Berlin, exploring how generative AI
+            is transforming business, education and the way we work.
           </p>
 
           <div className="fade-in-delay-3" style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
@@ -661,17 +661,17 @@ export default function BSPBerlinMicrosite() {
             {[
               {
                 icon: "🌐", title: "AI & Business Website",
-                desc: "Bernard's personal site on AI in business and education — insights, projects, and perspective.",
+                desc: "Bernard's personal site on AI in business and education — insights, projects and perspective.",
                 link: "https://www.bernarddonners-ai.nl", label: "Visit bernarddonners-ai.nl",
               },
               {
                 icon: "✍️", title: "Blog: Thought Leadership",
-                desc: "Reflections on AI, digital transformation, and the future of work and learning.",
+                desc: "Reflections on AI, digital transformation and the future of work and learning.",
                 link: "https://www.bernarddonners-ai.nl/blog", label: "Read the blog",
               },
               {
                 icon: "💼", title: "LinkedIn Profile",
-                desc: "Connect with Bernard and follow his latest posts on AI, business, and education.",
+                desc: "Connect with Bernard and follow his latest posts on AI, business and education.",
                 link: "https://www.linkedin.com/in/bernard-donners-288b0aa/", label: "View on LinkedIn",
               },
             ].map((r, i) => (
@@ -718,7 +718,7 @@ export default function BSPBerlinMicrosite() {
           </div>
           <div style={{ marginTop: 60, paddingTop: 32, borderTop: "1px solid rgba(255,255,255,0.1)" }}>
             <div style={{ fontSize: 13, color: "#64748b", lineHeight: 1.8 }}>
-              Guest Lecture Series — June 2026 — Berlin / Hamburg<br />
+              Guest Lecture Series — June 2026 — Berlin<br />
               BSP Business and Law School — Hochschule für Management und Recht<br />
               Siemens Villa, Calandrellistraße 1-9, 12247 Berlin
             </div>
